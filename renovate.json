@@ -24,6 +24,11 @@
     },
     {
       "groupName": "all non-major dependencies",
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "digest"
+      ],
       "matchDepNames": [
         "alpine-pkg-glibc",
         "apache-activemq",
