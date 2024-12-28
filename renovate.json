@@ -17,18 +17,7 @@
       "enabled": false
     },
     {
-      "matchUpdateTypes": [
-        "major"
-      ],
-      "enabled": false
-    },
-    {
-      "datasources": ["github-tags"],
-      "packagePatterns": ["^apache/activemq$"],
-      "allowedVersions": "<6.0.0"
-    },
-    {
-      "groupName": "all non-major dependencies",
+      "groupName": "all dependencies",
       "matchDepNames": [
         "alpine-pkg-glibc",
         "apache-activemq",
