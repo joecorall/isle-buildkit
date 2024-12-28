@@ -8,7 +8,7 @@ ARG SOLR_FILE=solr-${SOLR_VERSION}.tgz
 ARG SOLR_URL=https://archive.apache.org/dist/solr/solr/${SOLR_VERSION}/solr-${SOLR_VERSION}.tgz
 ARG SOLR_FILE_SHA256=d8538502019af1945e0b124a4613b46ca43aedcf3f20e9912c482c080407ea21
 # renovate: datasource=github-releases depName=solr-ocrhighlighting packageName=dbmdz/solr-ocrhighlighting
-ARG OCRHIGHLIGHT_VERSION=0.9.0
+ARG OCRHIGHLIGHT_VERSION=0.9.1
 ARG OCRHIGHLIGHT_FILE=solr-ocrhighlighting-${OCRHIGHLIGHT_VERSION}.jar
 ARG OCRHIGHLIGHT_URL=https://github.com/dbmdz/solr-ocrhighlighting/releases/download/${OCRHIGHLIGHT_VERSION}/solr-ocrhighlighting-${OCRHIGHLIGHT_VERSION}.jar
 ARG OCRHIGHLIGHT_FILE_SHA256=79eb7374989359c74903daefbe61f7feb9aeb7367ee6f7e1361fe8b911d2fa82
