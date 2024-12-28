@@ -17,7 +17,32 @@
       "enabled": false
     },
     {
-      "groupName": "all dependencies",
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "enabled": false
+    },
+    {
+      "matchDatasources": [
+        "github-tags"
+      ],
+      "matchPackagePatterns": [
+        "^apache/activemq$"
+      ],
+      "allowedVersions": "<6.0.0"
+    },
+    {
+      "matchDatasources": [
+        "github-tags"
+      ],
+      "matchPackagePatterns": [
+        "^apache/solr$",
+        "^apache/tomcat$"
+      ],
+      "allowedVersions": "<10.0.0"
+    },
+    {
+      "groupName": "all non-major dependencies",
       "matchDepNames": [
         "alpine-pkg-glibc",
         "apache-activemq",
@@ -44,7 +69,9 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["(^|/|\\.)Dockerfile$"],
+      "fileMatch": [
+        "(^|/|\\.)Dockerfile$"
+      ],
       "matchStrings": [
         "# renovate: datasource=(?<datasource>[a-z-]+?)(?: depName=(?<depName>.+?))? packageName=(?<packageName>.+?)(?: versioning=(?<versioning>[a-z-]+?))?\\s(?:ENV|ARG) .+?_VERSION=(?<currentValue>.+?)\\s"
       ]
