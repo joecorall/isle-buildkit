@@ -32,6 +32,7 @@
       "matchDepNames": [
         "alpine-pkg-glibc",
         "apache-activemq",
+        "apache-log4j-bg",
         "apache-log4j",
         "apache-solr",
         "apache-tomcat",

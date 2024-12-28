@@ -80,6 +80,11 @@ elif [ "$DEP" = "apache-log4j" ]; then
   ARG="LOG4J_FILE_SHA256"
   DOCKERFILES=(
     "fits/Dockerfile"
+  )
+elif [ "$DEP" = "apache-log4j-bg" ]; then
+  URL="https://archive.apache.org/dist/logging/log4j/${VERSION}/apache-log4j-${VERSION}-bin.zip"
+  ARG="LOG4J_FILE_SHA256"
+  DOCKERFILES=(
     "blazegraph/Dockerfile"
   )
 else
