@@ -23,6 +23,11 @@
       "enabled": false
     },
     {
+      "datasources": ["github-tags"],
+      "packagePatterns": ["^apache/activemq$"],
+      "allowedVersions": "<6.0.0"
+    },
+    {
       "groupName": "all non-major dependencies",
       "matchDepNames": [
         "alpine-pkg-glibc",
