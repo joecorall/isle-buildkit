@@ -5,6 +5,9 @@ on:
       - main
     types:
       - closed
+    paths-ignore:
+      - renovate.json
+      - ci/**
 permissions:
   contents: write
   actions: write
