@@ -49,6 +49,30 @@
       "enabled": false
     },
     {
+      "matchUpdateTypes": [
+        "minor"
+      ],
+      "groupName": "alpine-minor",
+      "matchManagers": [
+        "dockerfile"
+      ],
+      "matchPackageNames": [
+        "alpine"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "groupName": "all non-major dependencies",
+      "matchManagers": [
+        "dockerfile"
+      ],
+      "matchPackageNames": [
+        "alpine"
+      ]
+    },
+    {
       "groupName": "all non-major dependencies",
       "matchUpdateTypes": [
         "minor",
