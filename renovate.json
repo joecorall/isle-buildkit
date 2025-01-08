@@ -53,13 +53,10 @@
         "minor"
       ],
       "groupName": "alpine-minor",
-      "matchManagers": [
-        "dockerfile"
-      ],
-      "matchPackageNames": [
+      "matchDepNames": [
         "alpine"
       ],
-      "enabled": false
+      "prCreation": "approval"
     },
     {
       "matchUpdateTypes": [
@@ -67,10 +64,7 @@
         "digest"
       ],
       "groupName": "alpine-patch",
-      "matchManagers": [
-        "dockerfile"
-      ],
-      "matchPackageNames": [
+      "matchDepNames": [
         "alpine"
       ]
     },
@@ -128,8 +122,8 @@
       "pinDigests": false
     },
     {
-      "matchUpdateTypes": [
-        "syntax"
+      "matchDepNames": [
+        "docker/dockerfile"
       ],
       "enabled": false
     }
