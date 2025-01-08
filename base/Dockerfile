@@ -16,7 +16,7 @@ ARG S6_OVERLAY_AMD64_SHA256="59289456ab1761e277bd456a95e737c06b03ede99158beb24f1
 ARG S6_OVERLAY_ARM64=s6-overlay-aarch64.tar.xz
 ARG S6_OVERLAY_ARM64_SHA256="8b22a2eaca4bf0b27a43d36e65c89d2701738f628d1abd0cea5569619f66f785"
 
-LABEL License="MIT License"
+LABEL org.opencontainers.image.licenses="MIT"
 
 # Start s6
 ENTRYPOINT [ "/init" ]
