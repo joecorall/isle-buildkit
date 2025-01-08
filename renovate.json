@@ -58,7 +58,8 @@
       ],
       "matchPackageNames": [
         "alpine"
-      ]
+      ],
+      "prCreation": "approval"
     },
     {
       "matchUpdateTypes": [
