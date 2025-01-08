@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1.5.1
+# syntax=docker/dockerfile:1.12.1
 FROM nginx
 
 ARG TARGETARCH
