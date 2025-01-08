@@ -121,8 +121,7 @@
         "leptonica",
         "nginx",
         "nodejs",
-        "tomcat",
-        "docker/dockerfile"
+        "tomcat"
       ],
       "pinDigests": false
     },
