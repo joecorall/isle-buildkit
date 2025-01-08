@@ -5,7 +5,8 @@
     ":rebaseStalePrs"
   ],
   "enabledManagers": [
-    "custom.regex"
+    "custom.regex",
+    "dockerfile"
   ],
   "ignorePaths": [
     "**/node_modules/**",
@@ -80,6 +81,34 @@
           "bash ci/update-sha.sh \"{{{depName}}}\" \"{{{currentVersion}}}\" \"{{{newVersion}}}\" \"{{{newDigest}}}\""
         ]
       }
+    },
+    {
+      "description": "Don't pin buildkit image SHAs",
+      "matchManagers": [
+        "dockerfile"
+      ],
+      "matchPackageNames": [
+        "base",
+        "crayfish",
+        "download",
+        "drupal",
+        "imagemagick",
+        "java",
+        "leptonica",
+        "nginx",
+        "nodejs",
+        "tomcat"
+      ],
+      "pinDigests": false
+    },
+    {
+      "matchManagers": [
+        "dockerfile"
+      ],
+      "matchUpdateTypes": [
+        "syntax"
+      ],
+      "enabled": false
     }
   ],
   "customManagers": [
