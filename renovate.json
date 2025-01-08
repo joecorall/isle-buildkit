@@ -63,7 +63,8 @@
     },
     {
       "matchUpdateTypes": [
-        "patch"
+        "patch",
+        "digest"
       ],
       "groupName": "alpine-patch",
       "matchManagers": [
