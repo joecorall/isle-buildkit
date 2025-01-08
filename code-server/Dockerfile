@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1.5.1
+# syntax=docker/dockerfile:1.5.1@sha256:d2d74ff22a0e47b21f4bbde337e2ac4cd0a02a2226ef79264878db3dc7e87df8
 FROM islandora/nodejs:alpine-3.20.2-nodejs-20.15.1-r0@sha256:4f377ed5bbb832c51ee9f4b898555ffae0dfdd21f4becc5ac7e26cdf235ed004 AS nodejs
 FROM drupal
 
