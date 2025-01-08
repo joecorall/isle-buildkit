@@ -59,13 +59,13 @@
       "matchPackageNames": [
         "alpine"
       ],
-      "prCreation": "approval"
+      "enabled": false
     },
     {
       "matchUpdateTypes": [
         "patch"
       ],
-      "groupName": "all non-major dependencies",
+      "groupName": "alpine-patch",
       "matchManagers": [
         "dockerfile"
       ],
