@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.5.1
-FROM nodejs
+FROM islandora/nodejs:alpine-3.20.2-nodejs-20.15.1-r0@sha256:4f377ed5bbb832c51ee9f4b898555ffae0dfdd21f4becc5ac7e26cdf235ed004 AS nodejs
 FROM drupal
 
 ARG TARGETARCH

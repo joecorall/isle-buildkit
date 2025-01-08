@@ -291,15 +291,6 @@ target "alpaca-common" {
 target "base-common" {
   inherits = ["common"]
   context = "base"
-  contexts = {
-    # The digest (sha256 hash) is not platform specific but the digest for the manifest of all platforms.
-    # It will be the digest printed when you do: docker pull alpine:3.17.1
-    # Not the one displayed on DockerHub.
-    # N.B. This should match the value used in:
-    # - <https://github.com/Islandora-Devops/isle-imagemagick>
-    # - <https://github.com/Islandora-Devops/isle-leptonica>
-    alpine = "docker-image://alpine:3.20.2@sha256:0a4eaa0eecf5f8c050e5bba433f58c052be7587ee8af3e8b3910ef9ab5fbe9f5"
-  }
 }
 
 target "blazegraph-common" {
@@ -315,10 +306,7 @@ target "cantaloupe-common" {
 target "code-server-common" {
   inherits = ["common"]
   context = "code-server"
-  contexts = {
-    # Produced by this repository <https://github.com/Islandora-Devops/isle-nodejs>.
-    nodejs = "docker-image://islandora/nodejs:alpine-3.20.2-nodejs-20.15.1-r0@sha256:4f377ed5bbb832c51ee9f4b898555ffae0dfdd21f4becc5ac7e26cdf235ed004"
-  }
+
 }
 
 target "crayfish-common" {
@@ -359,19 +347,11 @@ target "homarus-common" {
 target "houdini-common" {
   inherits = ["common"]
   context = "houdini"
-  contexts = {
-    # Produced by this repository <https://github.com/Islandora-Devops/isle-imagemagick>.
-    imagemagick = "docker-image://islandora/imagemagick:alpine-3.20.2-imagemagick-7.1.1.36-r0@sha256:a1fa03a18e7e232e380d070d196dc2c0e0a8762dd385640b932e28fcacfd9b05"
-  }
 }
 
 target "hypercube-common" {
   inherits = ["common"]
   context = "hypercube"
-  contexts = {
-    # Produced by this repository <https://github.com/Islandora-Devops/isle-leptonica>.
-    leptonica = "docker-image://islandora/leptonica:alpine-3.20.2-leptonica-1.84.1-r0@sha256:9e9e46a328d8b55a61a352a6b06ff175f98e40cd5773c9bf93aac58fb56b65f7"
-  }
 }
 
 target "java-common" {
